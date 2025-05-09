@@ -35,4 +35,7 @@
   .search-bar {
     max-width: 100%; /* جعل شريط البحث يأخذ العرض الكامل في الشاشات الصغيرة */
   }
+  .navbarmain{
+    text-align: center;
+  }
 }

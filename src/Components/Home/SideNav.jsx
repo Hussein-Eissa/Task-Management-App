@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { FiAlignJustify, FiX } from "react-icons/fi";
+import { useState, useEffect } from "react";
+import {FiX } from "react-icons/fi";
+import { GoSidebarCollapse } from "react-icons/go";
 import { TbCategoryPlus } from "react-icons/tb";
 import { useModal } from "../../Context/CategoryContext";
 import CategoryModal from "./CategoryModal";
@@ -11,11 +12,14 @@ const SideNav = ({ onCategorySelect }) => {
   const [isOpen, setIsOpen] = useState(window.innerWidth > 992);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const updateWindowWidth = () => {
-    setWindowWidth(window.innerWidth);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
- 
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const toggleSideNav = () => {
     setIsOpen((prev) => !prev);
@@ -31,11 +35,11 @@ const SideNav = ({ onCategorySelect }) => {
     <div className="min-vh-100 d-flex flex-column justify-content-between">
       {/* زر الـ toggle */}
       <button
-        className={styles.toggleButton}
+        className={`${styles.toggleButton}`} 
         onClick={toggleSideNav}
         aria-label="Toggle navigation menu"
       >
-        {isOpen ? <FiX size={24} /> : <FiAlignJustify size={24} />} 
+        {isOpen ? <FiX size={24} /> : <GoSidebarCollapse size={24} />} 
       </button>
 
       {/* الـ Sidebar */}

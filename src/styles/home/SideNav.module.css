@@ -29,8 +29,8 @@
 .toggleButton {
   display: none; /* مخفي افتراضيًا في الشاشات الكبيرة */
   position: absolute;
-  top: 5%;
-  left: 5%; /* ناحية اليسار */
+  top: 0%;
+  left: 2%; /* ناحية اليسار */
   z-index: 1000;
   font-size: 25px;
   font-weight: bold;

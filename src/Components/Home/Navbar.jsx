@@ -1,4 +1,3 @@
-
 import React, { useState, useContext } from "react";
 import { FiSearch, FiSun, FiMoon } from "react-icons/fi";
 import logo from "../../assets/22a3ab16269821.562a8602153f7.png";
@@ -72,6 +71,7 @@ const Navbar = ({ onSearchChange }) => {
 };
 
 export default Navbar;
+
 
 
 
