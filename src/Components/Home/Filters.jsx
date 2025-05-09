@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaTasks } from "react-icons/fa";
+// import { FaTasks } from "react-icons/fa";
 import { MdFilterCenterFocus } from "react-icons/md";
 import styles from "../../styles/home/Filters.module.css";
 
