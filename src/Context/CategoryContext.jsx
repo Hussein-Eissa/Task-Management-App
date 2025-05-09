@@ -12,7 +12,7 @@ export const ModalProvider = ({ children }) => {
 
   // تحميل البيانات من API
   useEffect(() => {
-    fetch("https://taskmanagement-api.up.railway.app/api/categories")
+    fetch("http://localhost:3000/api/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch((err) => console.error("فشل في جلب البيانات:", err));
@@ -44,7 +44,7 @@ export const ModalProvider = ({ children }) => {
     try {
       if (editIndex !== null) {
         // تحديث
-        const response = await fetch(`https://taskmanagement-api.up.railway.app/api/categories/${formData._id}`, {
+        const response = await fetch(`http://localhost:3000/api/categories/${formData._id}`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
@@ -55,7 +55,7 @@ export const ModalProvider = ({ children }) => {
         );
       } else {
         // إضافة
-        const response = await fetch("https://taskmanagement-api.up.railway.app/api/categories", {
+        const response = await fetch("http://localhost:3000/api/categories", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
@@ -73,7 +73,7 @@ export const ModalProvider = ({ children }) => {
   const deleteCategory = async (index) => {
     try {
       const categoryToDelete = categories[index];
-      await fetch(`https://taskmanagement-api.up.railway.app/api/categories/${categoryToDelete._id}`, {
+      await fetch(`http://localhost:3000/api/categories/${categoryToDelete._id}`, {
         method: "DELETE",
       });
       setCategories((prev) => prev.filter((_, i) => i !== index));

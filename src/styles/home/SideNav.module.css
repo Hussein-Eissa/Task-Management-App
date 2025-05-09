@@ -30,7 +30,7 @@
   display: none; /* مخفي افتراضيًا في الشاشات الكبيرة */
   position: absolute;
   top: 5%;
-  left: 50%; /* ناحية اليسار */
+  left: 5%; /* ناحية اليسار */
   z-index: 1000;
   font-size: 25px;
   font-weight: bold;

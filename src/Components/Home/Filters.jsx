@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { FaTasks } from "react-icons/fa";
+import { FaTasks } from "react-icons/fa";
 import { MdFilterCenterFocus } from "react-icons/md";
 import styles from "../../styles/home/Filters.module.css";
 
@@ -19,9 +19,7 @@ const Filters = ({ onFilterChange }) => {
 
   return (
     <div>
-      {/* <div className='container-fluid' >
-                    <div className={styles.nav}> <h2  ><FaTasks /> TaskManager</h2></div>
-             </div> */}
+     
       <div className="text-center p-3">
         
         <h1><MdFilterCenterFocus /> Filters </h1>

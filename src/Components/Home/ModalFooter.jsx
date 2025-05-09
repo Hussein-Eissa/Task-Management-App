@@ -1,4 +1,4 @@
-// ده هيكون مسؤول عن الـ footer بتاع الـ Modal
+
 import React from 'react';
 
 const ModalFooter = ({ isEditing, handleAddTask, handleUpdateTask, closeModal }) => {
