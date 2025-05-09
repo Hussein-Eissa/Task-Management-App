@@ -1,7 +1,7 @@
-import Routes from './appRouter.jsx';
+import Routes from './appRouter';
 import { RouterProvider } from 'react-router-dom';
-import { ModalProvider } from "./Context/CategoryContext.jsx";
-import { ThemeProvider } from "./Context/ThemeContext.jsx";
+import { ModalProvider } from "./Context/CategoryContext";
+import { ThemeProvider } from "./Context/ThemeContext";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "@fortawesome/fontawesome-free/css/all.min.css";

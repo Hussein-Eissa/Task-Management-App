@@ -12,7 +12,7 @@ import { useModal } from "../../Context/CategoryContext";
 
 
 
-const API_URL = "http://localhost:3000/api/tasks";
+const API_URL = "https://taskmanagement-api.up.railway.app/api/tasks";
 
 const Tasks = ({ searchQuery, selectedCategory }) => {
   const { refreshTasksTrigger } = useModal();

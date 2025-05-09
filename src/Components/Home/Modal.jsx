@@ -1,10 +1,10 @@
 // ده هيكون الكومبوننت الرئيسي اللي بيجمع كل الكومبوننتات الأخرى ويتعامل مع هيكل الـ Modal.
 import React from 'react';
-import { FaTimes } from 'react-icons/fa';
+// import { FaTimes } from 'react-icons/fa';
 import { MdOutlineTask } from "react-icons/md";
 import ModalForm from './ModalForm';
 import ModalKeywords from './ModalKeywords';
-import ModalFooter from './ModalFooter.JSX';
+import ModalFooter from './ModalFooter';
 
 const Modal = ({ newTask, setNewTask, handleAddTask, handleUpdateTask, closeModal, isEditing }) => {
   const handleBackdropClick = (e) => {

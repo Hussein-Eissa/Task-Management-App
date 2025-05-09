@@ -16,7 +16,7 @@ const SingleTaskPage = () => {
     const fetchTask = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/tasks/${id}`
+          `https://taskmanagement-api.up.railway.app/api/tasks/${id}`
         );
         setTask(response.data);
       } catch (error) {
@@ -39,7 +39,7 @@ const SingleTaskPage = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:3000/api/tasks/${id}`);
+      await axios.delete(`https://taskmanagement-api.up.railway.app/api/tasks/${id}`);
       toast.success("Task deleted successfully", {
         position: "top-right",
         autoClose: 3000,

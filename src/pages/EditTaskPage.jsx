@@ -23,7 +23,7 @@ const EditTaskPage = () => {
     const fetchTask = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/tasks/${id}`
+          `https://taskmanagement-api.up.railway.app/api/tasks/${id}`
         );
         setTask(response.data);
       } catch (error) {
@@ -46,7 +46,7 @@ const EditTaskPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:3000/api/tasks/${id}`, task);
+      await axios.put(`https://taskmanagement-api.up.railway.app/api/tasks/${id}`, task);
       toast.success("Task updated successfully");
       navigate(`/task/${id}`);
     } catch (error) {
