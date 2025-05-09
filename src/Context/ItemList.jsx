@@ -9,7 +9,7 @@ const ItemList = ({ onCategoryClick }) => {
   const [categoryToDelete, setCategoryToDelete] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/categories")
+    fetch("https://taskmanagement-api.up.railway.app/api/categories")
       .then((res) => res.json())
       .catch((err) => console.error("فشل في جلب البيانات:", err));
   }, []);
