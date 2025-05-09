@@ -1,5 +1,7 @@
 import React from "react";
-import { useModal } from "../../Context/CategoryContext"; // تعديل المسار
+import { useModal } from "../../Context/CategoryContext"; 
+
+
 
 const ModalForm = ({ newTask, setNewTask }) => {
   const { categories } = useModal();

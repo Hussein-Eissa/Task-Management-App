@@ -19,9 +19,7 @@ const Filters = ({ onFilterChange }) => {
 
   return (
     <div>
-      {/* <div className='container-fluid' >
-                    <div className={styles.nav}> <h2  ><FaTasks /> TaskManager</h2></div>
-             </div> */}
+     
       <div className="text-center p-3">
         
         <h1><MdFilterCenterFocus /> Filters </h1>

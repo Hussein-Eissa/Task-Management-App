@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FiAlignJustify, FiX } from "react-icons/fi";
 import { TbCategoryPlus } from "react-icons/tb";
 import { useModal } from "../../Context/CategoryContext";
@@ -15,18 +15,7 @@ const SideNav = ({ onCategorySelect }) => {
     setWindowWidth(window.innerWidth);
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", updateWindowWidth);
-    return () => window.removeEventListener("resize", updateWindowWidth);
-  }, []);
-
-  useEffect(() => {
-    if (windowWidth <= 992) {
-      setIsOpen(false); // إغلاق الـ Sidebar في الشاشات الصغيرة
-    } else {
-      setIsOpen(true); // إظهار الـ Sidebar في الشاشات الكبيرة
-    }
-  }, [windowWidth]);
+ 
 
   const toggleSideNav = () => {
     setIsOpen((prev) => !prev);
@@ -46,7 +35,7 @@ const SideNav = ({ onCategorySelect }) => {
         onClick={toggleSideNav}
         aria-label="Toggle navigation menu"
       >
-        {isOpen ? <FiX size={24} /> : <FiAlignJustify size={24} />} Side
+        {isOpen ? <FiX size={24} /> : <FiAlignJustify size={24} />} 
       </button>
 
       {/* الـ Sidebar */}
