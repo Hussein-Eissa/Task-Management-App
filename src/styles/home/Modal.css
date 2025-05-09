@@ -1,0 +1,49 @@
+.task_modal {
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-form {
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .task-effect {
+    transition: all 0.3s ease;
+  }
+  
+  .task-effect:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  .tag {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 9999px; /* للحصول على شكل دائري */
+  color: #fff; /* النص أبيض */
+}
+.close {
+    transition: color 0.5s; /* التأثير على اللون */
+  }
+  
+  .close svg {
+    color: dark; /* اللون الأساسي للأيقونة */
+  }
+  
+  .close:hover svg {
+    color: red; /* اللون لما نعمل hover */
+  }
+  .modal-body {
+    max-height: 70vh; /* ارتفاع أقصى للـ body مع scroll */
+    overflow-y: auto; /* تفعيل الـ scroll داخل الـ Modal */
+  }
+  
+  .tag {
+    display: inline-block; /* عشان الـ tags تظهر بشكل صحيح */
+  }

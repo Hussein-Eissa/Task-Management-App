@@ -1,0 +1,38 @@
+.navbar {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+  font-size: 1rem;
+  padding: 15px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 500px; /* تحديد عرض أقصى لشريط البحث */
+}
+
+.search-bar .form-control {
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.search-bar .form-control:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.search-icon {
+  color: #888;
+}
+
+@media (max-width: 991px) {
+  .search-bar {
+    max-width: 100%; /* جعل شريط البحث يأخذ العرض الكامل في الشاشات الصغيرة */
+  }
+}

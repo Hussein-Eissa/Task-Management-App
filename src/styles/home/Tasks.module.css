@@ -1,0 +1,111 @@
+.inputTitle{
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+
+}
+.inputTitle:focus{
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+
+}
+.select{
+    border: none;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    
+}
+.date{
+    width: 100%;
+    height: 50px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    font-size: 1rem;
+}
+.editBtn{
+    border: none;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    font-size: 1rem;
+}
+.deleteBtn{
+    border: none;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    font-size: 1rem;
+}
+
+.deleteBtn:hover{
+    background-color: #6366F1;
+    color: white;
+}
+tbody tr td , thead tr th{
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+}
+
+
+.T-Item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #6366F1 !important;
+}
+
+
+.taskItem:hover{
+    
+    color: white !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.addbtn{
+    background-color: #484adb;
+    width: 100%;
+    padding: 13px;    
+    color: white;
+    font-Weight:bold;
+    font-Size: 1.25rem;
+    border: none;
+    margin-top: 15px;
+    margin-Bottom:15px;
+    border-radius: 3.125rem;
+}
+.addbtn:hover{
+    background-color: #5759e7;
+    color: white;
+}
